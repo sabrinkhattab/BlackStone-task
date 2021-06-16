@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faCommentDots , faHeart} from '@fortawesome/free-solid-svg-icons';
-import {Feed} from '../Feed'
+import {Feed} from '../../../Feed'
 @Component({
   selector: 'app-feeds',
   templateUrl: './feeds.component.html',

@@ -8,13 +8,13 @@ import { SidebarComponent } from './main-layout/sidebar/sidebar.component';
 import { ListComponent } from './main-layout/sidebar/list/list.component';
 import { ListItemComponent } from './main-layout/sidebar/list/list-item/list-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FeedsComponent } from './feeds/feeds.component';
-import { StoriesComponent } from './stories/stories.component';
+import { FeedsComponent } from './pages/home/feeds/feeds.component';
+import { StoriesComponent } from './pages/home/stories/stories.component';
 import { HomeComponent } from './pages/home/home.component';
-import { RightSideComponent } from './right-side/right-side.component';
-import { TopComponent } from './right-side/top/top.component';
-import { SuggestionsComponent } from './right-side/suggestions/suggestions.component';
-import { PostActivityComponent } from './right-side/post-activity/post-activity.component';
+import { RightSideComponent } from './pages/home/right-side/right-side.component';
+import { TopComponent } from './pages/home/right-side/top/top.component';
+import { SuggestionsComponent } from './pages/home/right-side/suggestions/suggestions.component';
+import { PostActivityComponent } from './pages/home/right-side/post-activity/post-activity.component';
 import {ToggleComponent} from './main-layout/sidebar/toggle/toggle.component'
 
 @NgModule({

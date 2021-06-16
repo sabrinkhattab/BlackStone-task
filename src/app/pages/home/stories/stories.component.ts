@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Stories} from '../mock-stories'
-import {Story} from '../Story'
+import {Stories} from '../../../mock-stories'
+import {Story} from '../../../Story'
 @Component({
   selector: 'app-stories',
   templateUrl: './stories.component.html',
