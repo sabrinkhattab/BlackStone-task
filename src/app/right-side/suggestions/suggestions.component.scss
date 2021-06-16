@@ -1,0 +1,65 @@
+
+@import "../../../scss/variables";
+.suggesions-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $text-secondary-color;
+
+    .header { 
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            font-weight: bold;
+        }
+        span{
+            color: $purple-color;
+            font-weight: bold;
+        }
+    }
+    .single-suggest{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        .left {
+            display: flex;
+            
+            img{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+            span {
+                color: $text-secondary-color;
+                font-size: 12px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .right {
+            align-self: center;
+            span{
+                background-color: $purple-color;
+                color: white;
+                padding: 5px 15px 5px 15px;
+                border-radius: 5px;
+                font-size: 14px;
+
+                
+            }
+            .followed{
+                background-color: transparent;
+                color: black;
+                border: 1px solid $text-secondary-color;
+                padding: 5px 10px 5px 10px;
+                font-size: 12px;
+            }
+        }
+    }
+}

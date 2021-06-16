@@ -1,0 +1,96 @@
+@import "../../scss/variables";
+.feeds-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .topbar{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.links{
+    display: flex;
+    p{
+        padding-left: 15px;
+        color: $text-secondary-color ;
+        font-weight: bold;
+    }
+    p:last-child {
+        color :$purple-color;
+    }
+}
+.feeds-title{
+    font-weight: bold;
+}
+
+.feeds { 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 100%;
+    .single-feed{
+        width: 46%;
+        display: flex;
+        flex-direction: column;
+        margin: 11px;
+        .imgCard{
+          width: 100%;
+          height: 200px;
+          border-radius: 10px;
+          margin: 3px;
+        }
+        .color2{
+            background-color: #B7EFFF;
+        }
+        .color3{
+            background-color: #FFDAD2;
+        }
+        .color4{
+            background-color: #FEF2CE;
+        }
+        .actions{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+
+            img{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 10px;
+                
+            }
+        }
+    }
+
+    .left-side{
+        display: flex;
+        p{
+            align-self: center;
+        }
+    }
+    .right-side {
+        padding:5px;
+
+        .heart-icon{
+            color:#ff5775;
+            width: 15px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+        span{
+            margin-right: 8px;
+        }
+        .comment-icon{
+            margin-right: 8px;
+            color : $text-secondary-color;
+            cursor: pointer;
+        }
+        .comments{
+            color : $text-secondary-color
+
+        }
+        
+    }
+}

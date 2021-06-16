@@ -1,0 +1,20 @@
+@import "../../scss/variables";
+.right-side-wrapper{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid $text-secondary-color;
+    padding-left: 32px;
+    margin-left: 25px;
+    height: 100vh;
+}
+.links{
+    color: $text-secondary-color;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 40px;
+
+    span {
+        cursor: pointer;
+        margin-right: 3px;
+    }
+}

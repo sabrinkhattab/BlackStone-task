@@ -1,0 +1,52 @@
+<div class="feeds-wrapper">
+    <div class="topbar">
+     <p class="feeds-title">Feeds</p>
+     <div class="links">
+        <p>All</p>
+        <p>Following</p>
+        <p>Newest</p>
+        <p>Popular</p>
+     </div>
+    </div>
+    <div class="feeds">
+        <div class="single-feed" *ngFor="let feed of feeds" >
+            {{log(feed.img)}}
+            <img class="imgCard" src="{{feed.img}}"/>
+            <div class="actions">
+                <div class="left-side">
+                    <img src={{feed.userImg}}/>
+                    <p>{{feed.name}}</p>
+                </div>
+                <div class="right-side">
+                    <fa-icon (click)="increment(feed)" [icon]="faHeart" class="heart-icon" size="lg"></fa-icon><span [ngStyle]="{color : '#ff5775'}">{{feed.likes}}</span>
+                    <fa-icon [icon]="faCommentDots"  class="comment-icon"></fa-icon><span class="comments">{{feed.comments}}</span>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="single-feed">
+            <div class="imgCard color2 ">
+                
+            </div>
+            <div>
+actions
+            </div>
+        </div>
+        <div class="single-feed">
+            <div class="imgCard color3">
+                
+            </div>
+            <div>
+actions
+            </div>     
+        </div>
+        <div class="single-feed">
+            <div class="imgCard color4">
+                
+            </div>
+            <div>
+actions
+            </div>
+        </div> -->
+    </div>
+</div>

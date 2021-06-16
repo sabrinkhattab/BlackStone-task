@@ -1,0 +1,16 @@
+<div class="toggle-wrapper">
+    <div class="toggle">
+        <p>Account</p>
+        <fa-icon  class="icon" [icon]="faChevronUp" *ngIf="!show" (click)=(showHide())></fa-icon>
+        <fa-icon  class="icon" [icon]="faChevronDown" *ngIf="show" (click)=(showHide())></fa-icon>
+
+    </div>
+    <div class="account" *ngIf="show">
+        <img src="../../../../assets/imgs/pexels-dimitry-zub-6512072.jpg"/>
+        <div>
+            <p>Michael</p>
+            <span>@michaelsc..</span>
+        </div>
+    </div>
+    
+</div>

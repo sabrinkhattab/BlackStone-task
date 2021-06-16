@@ -1,0 +1,28 @@
+<div class="story-container">
+<ul>
+    <li>
+        <div class="no-story">
+            <div class="story">
+                    <img src="../../../../assets/imgs/pexels-dimitry-zub-6512072.jpg"/>
+                    <div class="overlay"></div>
+            </div>
+        </div>
+      
+        <span class="user">
+Your Story
+        </span>
+    </li>
+    <li  *ngFor="let story of stories">
+        <div  [ngClass]="story.hasStory ? 'has-story' : 'no-story' ">
+            <div class="story">
+                <img src={{story.img}}/>
+            </div>
+        </div>
+       
+        <span class="user">
+          {{story.name}}
+        </span>
+    </li>
+
+</ul>
+</div>

@@ -1,0 +1,50 @@
+@import "../../../scss/variables";
+.top-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .input-container{
+        width: 45%;
+
+    }
+    div{
+        width: 22%;
+        align-self: center;
+    }
+
+}
+
+.search{
+    background: transparent;
+    border: 1px solid $text-secondary-color;
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+    width: 100%;
+ 
+}
+.search:focus{
+    outline: none !important;
+    border-color : $text-secondary-color;
+    // border: 1px solid $text-secondary-color;
+}
+.searchIcon{
+  position: relative;
+  left: 68%;
+  top: 51%;
+  color: $text-secondary-color;
+}
+.bellIcon{
+    color: $text-secondary-color;
+    padding: 15px 20px 15px 20px;
+    border-radius: 50%;
+    border: 1px solid $text-secondary-color;
+
+}
+.cloudUpload{
+    color: white;
+    background-color: #59b9ff;
+    padding: 15px 17px 15px 17px;
+
+    border-radius: 50%;
+}
